@@ -9,7 +9,7 @@ passport.use(
       callbackURL: 'http://localhost:6969/auth/google/callback',
     },
     (accessToken, refreshToken, profile, done) => {
-      // console.log(profile);
+      console.log(profile);
       return done(null, profile);
     },
   ),
